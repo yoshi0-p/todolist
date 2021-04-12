@@ -39,25 +39,25 @@ export default {
   },
   methods: {
     async getContact() {
-      const resData = await axios.get("https://desolate-brook-63817.herokuapp.com/api/todos/");
+      const resData = await axios.get("https://afternoon-hollows-74351.herokuapp.com/api/todos/");
       this.todoLists = resData.data.data;
     },
     async insertContact() {
       const sendData = {
         whattodo: this.newWhattodo,
       };
-      await axios.post("https://desolate-brook-63817.herokuapp.com/api/todos/", sendData);
+      await axios.post("https://afternoon-hollows-74351.herokuapp.com/api/todos/", sendData);
       await this.getContact();
     },
     async updateContact(id,whattodo) {
       const sendData = {
         whattodo: whattodo,
       };
-      await axios.put("https://desolate-brook-63817.herokuapp.com/api/todos/" + id, sendData);
+      await axios.put("https://afternoon-hollows-74351.herokuapp.com/api/todos/" + id, sendData);
       await this.getContact();
     },
     async deleteContact(id) {
-      await axios.delete("https://desolate-brook-63817.herokuapp.com/api/todos/" + id);
+      await axios.delete("https://afternoon-hollows-74351.herokuapp.com/api/todos/" + id);
       await this.getContact();
     },
   },
