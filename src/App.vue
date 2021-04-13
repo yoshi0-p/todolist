@@ -3,13 +3,10 @@
     <div  class="center">
       <div>
     <h1>Todo List</h1>
-    <div class="new">
       <div class="todo">
         <input type="text" name="name" id="name" v-model="newEvent" />
         <button @click="insertContact">追加</button>
       </div>
-      
-    </div>
     <div class="table">
         <div class="item" v-for="item in todoLists" :key="item.id">
           <input type="text" v-model="item.event" />
@@ -70,5 +67,6 @@ export default {
   display: flex;
   justify-content: center;
   width:60%;
+  margin-top:20%;
 }
 </style>
