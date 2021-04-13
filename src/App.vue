@@ -74,7 +74,6 @@ export default {
   justify-content: space-between;
 }
 .center{
-  width:60%;
   background-color:white;
   padding:10%;
 
