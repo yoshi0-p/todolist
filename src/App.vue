@@ -1,27 +1,20 @@
 <template>
   <div id="app">
-    <h1>連絡先アプリ</h1>
+    <h1>Todo List</h1>
     <div class="new">
-      <h2>新規作成</h2>
-      <div class="name">
+      <div class="todo">
         <input type="text" name="name" id="name" v-model="newEvent" />
+        <button @click="insertContact">追加</button>
       </div>
-      <button @click="insertContact">新規作成</button>
+      
     </div>
     <div class="table">
       <table>
-        <tr v-for="item in todoLists" :key="item.id">
-          <td>{{ item.id }}</td>
-          <td><input type="text" v-model="item.event" /></td>
-          <td>
-            <button @click="updateContact(item.id, item.event)">
-              更新
-            </button>
-          </td>
-          <td>
+        <div class="item" v-for="item in todoLists" :key="item.id">
+          <input type="text" v-model="item.event" />
+            <button @click="updateContact(item.id, item.event)">更新</button>
             <button @click="deleteContact(item.id)">削除</button>
-          </td>
-        </tr>
+        </div>
       </table>
     </div>
   </div>
@@ -67,18 +60,8 @@ export default {
 </script>
 
 <style>
-table,
-td,
-th {
-  border: 1px solid #000;
-  border-collapse: collapse;
-  text-align: center;
-}
-td,
-th {
-  padding: 5px;
-}
-th {
-  background: #f0e6cc;
+.item{
+  display: flex;
+  justify-content: space-between;
 }
 </style>
