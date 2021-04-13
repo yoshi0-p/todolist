@@ -52,11 +52,11 @@ export default {
       const sendData = {
         event: event,
       };
-      await axios.put("https://afternoon-hollows-74351.herokuapp.com/api/todos/" + id + "/", sendData);
+      await axios.put("https://afternoon-hollows-74351.herokuapp.com/api/todos/" + id , sendData);
       await this.getContact();
     },
     async deleteContact(id) {
-      await axios.delete("https://afternoon-hollows-74351.herokuapp.com/api/todos/" + id +"/");
+      await axios.delete("https://afternoon-hollows-74351.herokuapp.com/api/todos/" + id );
       await this.getContact();
     },
   },
