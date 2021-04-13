@@ -44,14 +44,14 @@ export default {
     },
     async insertContact() {
       const sendData = {
-        whattodo: this.newWhattodo,
+        todo: this.newWhattodo,
       };
       await axios.post("https://afternoon-hollows-74351.herokuapp.com/api/todos", sendData);
       await this.getContact();
     },
     async updateContact(id,whattodo) {
       const sendData = {
-        whattodo: whattodo,
+        todo: whattodo,
       };
       await axios.put("https://afternoon-hollows-74351.herokuapp.com/api/todos" + id, sendData);
       await this.getContact();
