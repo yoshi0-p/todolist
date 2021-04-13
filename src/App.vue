@@ -9,8 +9,10 @@
       </div>
       <div class="item" v-for="item in todoLists" :key="item.id">
        <input type="text" v-model="item.event" />
+       <div class="menu">
        <button @click= "updateTodo(item.id, item.event)">更新</button>
        <button @click= "deleteTodo(item.id)">削除</button>
+       </div>
       </div>
     </div>
   </div>
@@ -71,8 +73,10 @@ export default {
   justify-content: space-between;
 }
 .center{
-
   width:60%;
   background-color:white;
+}
+.menu{
+  width:20%;
 }
 </style>
