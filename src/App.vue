@@ -1,7 +1,8 @@
 <template>
 <div id="app" >
-  <div  class="center">
+ 
       <h1>Todo List</h1>
+       <div  class="center">
       <div>
       <div class="todo">
         <input type="text"  v-model="newEvent" />
@@ -63,7 +64,7 @@ export default {
   background-color:purple;
   padding-top:10%;
   padding-bottom:10%;
-    display: flex;
+  display: flex;
   justify-content: center;
   width:100vw;
   height:100vh;
