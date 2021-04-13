@@ -1,5 +1,6 @@
 <template>
-  <div id="app" class="center">
+<div id="app" >
+  <div  class="center">
       <div>
       <h1>Todo List</h1>
       <div class="todo">
@@ -12,6 +13,7 @@
        <button @click= "deleteTodo(item.id)">削除</button>
       </div>
     </div>
+  </div>
   </div>
 </template>
 
@@ -55,6 +57,9 @@ export default {
 </script>
 
 <style>
+#id{
+  background-color:purple;
+}
 .item{
   display: flex;
   justify-content: space-between;
@@ -64,6 +69,6 @@ export default {
   justify-content: center;
   width:60%;
   margin-top:20%;
-  background-color:purple;
+  background-color:white;
 }
 </style>
