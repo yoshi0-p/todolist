@@ -57,7 +57,7 @@ export default {
 </script>
 
 <style>
-#id{
+#app{
   background-color:purple;
 }
 .item{
