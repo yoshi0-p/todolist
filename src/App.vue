@@ -39,7 +39,7 @@ export default {
   },
   methods: {
     async getContact() {
-      const resData = await axios.get("http://afternoon-hollows-74351.herokuapp.com/api/todos/");
+      const resData = await axios.get("https://afternoon-hollows-74351.herokuapp.com/api/todos");
       this.todoLists = resData.data.data;
     },
     async insertContact() {
