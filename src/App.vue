@@ -64,5 +64,6 @@ export default {
   justify-content: center;
   width:60%;
   margin-top:20%;
+  background-color:purple;
 }
 </style>
