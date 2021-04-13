@@ -36,18 +36,18 @@ export default {
         event: this.newEvent,
       };
       await axios.post("https://afternoon-hollows-74351.herokuapp.com/api/todos", sendData);
-      await this.getContact();
+      await this.getTodo();
     },
     async updateTodo(id,event) {
       const sendData = {
         event: event,
       };
       await axios.put("https://afternoon-hollows-74351.herokuapp.com/api/todos/" + id , sendData);
-      await this.getContact();
+      await this.getTodo();
     },
     async deleteTodo(id) {
       await axios.delete("https://afternoon-hollows-74351.herokuapp.com/api/todos/" + id );
-      await this.getContact();
+      await this.getTodo();
     },
   },
   created() {
