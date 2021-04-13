@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <div  class="center">
       <div>
     <h1>Todo List</h1>
       <div class="todo">
@@ -12,7 +11,6 @@
        <button @click="updateContact(item.id, item.event)">更新</button>
        <button @click="deleteContact(item.id)">削除</button>
       </div>
-    </div>
     </div>
   </div>
 </template>
@@ -57,7 +55,7 @@ export default {
 </script>
 
 <style>
-.item{
+#app{
   display: flex;
   justify-content: space-between;
 }
