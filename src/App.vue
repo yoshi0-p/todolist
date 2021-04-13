@@ -4,7 +4,7 @@
       <div>
       <h1>Todo List</h1>
       <div class="todo">
-        <input type="text" name="name" id="name" v-model="newEvent" />
+        <input type="text"  v-model="newEvent" />
         <button @click= "insertTodo">追加</button>
       </div>
       <div class="item" v-for="item in todoLists" :key="item.id">
@@ -60,6 +60,7 @@ export default {
 #app{
   background-color:purple;
   padding-top:10%;
+  padding-bottom:10%;
     display: flex;
   justify-content: center;
   width:100vw;
