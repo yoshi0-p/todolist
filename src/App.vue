@@ -76,6 +76,7 @@ export default {
 .center{
   width:60%;
   background-color:white;
+  padding:10%;
 }
 .menu{
   width:20%;
