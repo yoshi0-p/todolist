@@ -3,7 +3,6 @@
       
        <div  class="center"> 
        <h1>Todo List</h1>   
-      <div>
       <div class="todo">
         <input type="text"  v-model="newEvent" />
         <button @click= "insertTodo">追加</button>
@@ -13,7 +12,6 @@
        <div class="menu">
        <button @click= "updateTodo(item.id, item.event)">更新</button>
        <button @click= "deleteTodo(item.id)">削除</button>
-       </div>
       </div>
     </div>
   </div>
