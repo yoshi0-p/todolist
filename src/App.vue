@@ -1,20 +1,16 @@
 <template>
 <div id="app" >
       
-       <div  class="center"> 
        <h1>Todo List</h1>   
-      <div class="todo">
         <input type="text"  v-model="newEvent" />
         <button @click= "insertTodo">追加</button>
-      </div>
       <div class="item" v-for="item in todoLists" :key="item.id">
        <input type="text" v-model="item.event" />
-       <div class="menu">
-       <button @click= "updateTodo(item.id, item.event)">更新</button>
-       <button @click= "deleteTodo(item.id)">削除</button>
+        <div class="menu">
+        <button @click= "updateTodo(item.id, item.event)">更新</button>
+        <button @click= "deleteTodo(item.id)">削除</button>
+        </div>
       </div>
-    </div>
-  </div>
   </div>
 </template>
 
@@ -62,23 +58,8 @@ export default {
   background-color:#2D197C;
   display: flex;
   justify-content: center;
+  width:100vw;
+  height:100vh;
 }
-.item{
-  display: flex;
-  justify-content: space-between;
-}
-.center{
-  background-color:white;
-  padding:10%;
-  width:60%;
-  height:50%;
-}
-.logo{
-  display: flex;
-  justify-content: center;
-}
-.menu{
-  display: flex;
-  width:20%;
-}
+
 </style>
