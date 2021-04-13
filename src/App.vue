@@ -59,7 +59,7 @@ export default {
 <style>
 #app{
   background-color:purple;
-  padding-top:20%;
+  padding-top:10%;
     display: flex;
   justify-content: center;
 }
