@@ -4,12 +4,12 @@
       <h1>Todo List</h1>
       <div class="todo">
         <input type="text" name="name" id="name" v-model="newEvent" />
-        <button @click="insertContact">追加</button>
+        <button @click= "insertTodo">追加</button>
       </div>
       <div class="item" v-for="item in todoLists" :key="item.id">
        <input type="text" v-model="item.event" />
-       <button @click="updateContact(item.id, item.event)">更新</button>
-       <button @click="deleteContact(item.id)">削除</button>
+       <button @click= "updateTodo(item.id, item.event)">更新</button>
+       <button @click= "deleteTodo(item.id)">削除</button>
       </div>
     </div>
   </div>
@@ -25,31 +25,31 @@ export default {
     };
   },
   methods: {
-    async getContact() {
+    async getTodo() {
       const resData = await axios.get("https://afternoon-hollows-74351.herokuapp.com/api/todos");
       this.todoLists = resData.data.data;
     },
-    async insertContact() {
+    async insertTodo() {
       const sendData = {
         event: this.newEvent,
       };
       await axios.post("https://afternoon-hollows-74351.herokuapp.com/api/todos", sendData);
       await this.getContact();
     },
-    async updateContact(id,event) {
+    async updateTodo(id,event) {
       const sendData = {
         event: event,
       };
       await axios.put("https://afternoon-hollows-74351.herokuapp.com/api/todos/" + id , sendData);
       await this.getContact();
     },
-    async deleteContact(id) {
+    async deleteTodo(id) {
       await axios.delete("https://afternoon-hollows-74351.herokuapp.com/api/todos/" + id );
       await this.getContact();
     },
   },
   created() {
-    this.getContact();
+    this.getTodo();
   },
 };
 </script>
