@@ -61,7 +61,7 @@ export default {
 
 <style>
 #app{
-  background-color:2D197C;
+  background-color:#2D197C;
   padding-top:10%;
   padding-bottom:10%;
   display: flex;
@@ -83,6 +83,7 @@ export default {
   justify-content: center;
 }
 .menu{
+  display: flex;
   width:20%;
 }
 </style>
