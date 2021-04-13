@@ -71,6 +71,7 @@ export default {
   background-color:white;
   padding:10%;
   width:60%;
+  height:50%;
 }
 .logo{
   display: flex;
