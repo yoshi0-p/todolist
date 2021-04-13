@@ -59,16 +59,17 @@ export default {
 <style>
 #app{
   background-color:purple;
+  padding-top:20%;
+    display: flex;
+  justify-content: center;
 }
 .item{
   display: flex;
   justify-content: space-between;
 }
 .center{
-  display: flex;
-  justify-content: center;
+
   width:60%;
-  margin-top:20%;
   background-color:white;
 }
 </style>
