@@ -1,7 +1,8 @@
 <template>
 <div id="app" >
-      <div class="logo"><h1>Todo List</h1></div>
-       <div  class="center">    
+      
+       <div  class="center"> 
+       <h1>Todo List</h1>   
       <div>
       <div class="todo">
         <input type="text"  v-model="newEvent" />
