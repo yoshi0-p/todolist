@@ -1,11 +1,12 @@
 <template>
 <div id="app" >
       
-        
+       <div  class="center"> 
        <h1>Todo List</h1>   
+      <div class="todo">
         <input type="text"  v-model="newEvent" />
         <button @click= "insertTodo">追加</button>
-        <div  class="center">
+      </div>
       <div class="item" v-for="item in todoLists" :key="item.id">
        <input type="text" v-model="item.event" />
        <div class="menu">
@@ -59,12 +60,8 @@ export default {
 <style>
 #app{
   background-color:#2D197C;
-  padding-top:10%;
-  padding-bottom:10%;
   display: flex;
   justify-content: center;
-  width:100vw;
-  height:100vh;
 }
 .item{
   display: flex;
@@ -73,7 +70,6 @@ export default {
 .center{
   background-color:white;
   padding:10%;
-
 }
 .logo{
   display: flex;
