@@ -62,6 +62,8 @@ export default {
   padding-top:10%;
     display: flex;
   justify-content: center;
+  width:100vw;
+  height:100vh;
 }
 .item{
   display: flex;
