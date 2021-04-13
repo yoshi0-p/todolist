@@ -7,13 +7,11 @@
         <input type="text" name="name" id="name" v-model="newEvent" />
         <button @click="insertContact">追加</button>
       </div>
-    <div class="table">
-        <div class="item" v-for="item in todoLists" :key="item.id">
-          <input type="text" v-model="item.event" />
-            <button @click="updateContact(item.id, item.event)">更新</button>
-            <button @click="deleteContact(item.id)">削除</button>
-        </div>
-    </div>
+      <div class="item" v-for="item in todoLists" :key="item.id">
+       <input type="text" v-model="item.event" />
+       <button @click="updateContact(item.id, item.event)">更新</button>
+       <button @click="deleteContact(item.id)">削除</button>
+      </div>
     </div>
     </div>
   </div>
