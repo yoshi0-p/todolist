@@ -14,7 +14,7 @@
           <td>{{ item.id }}</td>
           <td><input type="text" v-model="item.event" /></td>
           <td>
-            <button @click="updateContact(item.id, item.name, item.email)">
+            <button @click="updateContact(item.id, item.event)">
               更新
             </button>
           </td>
