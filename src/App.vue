@@ -1,7 +1,7 @@
 <template>
-  <div id="app" class="app">
+  <div id="app" class="center">
       <div>
-    <h1>Todo List</h1>
+      <h1>Todo List</h1>
       <div class="todo">
         <input type="text" name="name" id="name" v-model="newEvent" />
         <button @click="insertContact">追加</button>
@@ -55,7 +55,7 @@ export default {
 </script>
 
 <style>
-.app{
+.item{
   display: flex;
   justify-content: space-between;
 }
