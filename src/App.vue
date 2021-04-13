@@ -4,7 +4,7 @@
     <div class="new">
       <h2>新規作成</h2>
       <div class="name">
-        <input type="text" name="name" id="name" v-model="newWhattodo" />
+        <input type="text" name="name" id="name" v-model="newEvent" />
       </div>
       <button @click="insertContact">新規作成</button>
     </div>
