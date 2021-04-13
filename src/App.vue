@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="app">
       <div>
     <h1>Todo List</h1>
       <div class="todo">
@@ -55,7 +55,7 @@ export default {
 </script>
 
 <style>
-#app{
+.app{
   display: flex;
   justify-content: space-between;
 }
