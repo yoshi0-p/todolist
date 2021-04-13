@@ -33,7 +33,7 @@ import axios from "axios";
 export default {
   data() {
     return {
-      newWhattodo: "",
+      newEvent: "",
       todoLists: [],
     };
   },
@@ -44,14 +44,14 @@ export default {
     },
     async insertContact() {
       const sendData = {
-        todo: this.newWhattodo,
+        event: this.newEvent,
       };
       await axios.post("https://afternoon-hollows-74351.herokuapp.com/api/todos", sendData);
       await this.getContact();
     },
-    async updateContact(id,whattodo) {
+    async updateContact(id,event) {
       const sendData = {
-        todo: whattodo,
+        event: event,
       };
       await axios.put("https://afternoon-hollows-74351.herokuapp.com/api/todos" + id, sendData);
       await this.getContact();
