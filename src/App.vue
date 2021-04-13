@@ -61,7 +61,7 @@ export default {
 
 <style>
 #app{
-  background-color:purple;
+  background-color:2D197C;
   padding-top:10%;
   padding-bottom:10%;
   display: flex;
