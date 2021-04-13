@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <div  class="center">
     <h1>Todo List</h1>
     <div class="new">
       <div class="todo">
@@ -9,13 +10,12 @@
       
     </div>
     <div class="table">
-      <table>
         <div class="item" v-for="item in todoLists" :key="item.id">
           <input type="text" v-model="item.event" />
             <button @click="updateContact(item.id, item.event)">更新</button>
             <button @click="deleteContact(item.id)">削除</button>
         </div>
-      </table>
+    </div>
     </div>
   </div>
 </template>
@@ -63,5 +63,10 @@ export default {
 .item{
   display: flex;
   justify-content: space-between;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  width:60%;
 }
 </style>
