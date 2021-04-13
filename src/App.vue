@@ -70,6 +70,7 @@ export default {
 .center{
   background-color:white;
   padding:10%;
+  width:60%;
 }
 .logo{
   display: flex;
