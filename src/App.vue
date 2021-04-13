@@ -3,7 +3,6 @@
   <div  class="center">
       <h1>Todo List</h1>
       <div>
-      <h1>Todo List</h1>
       <div class="todo">
         <input type="text"  v-model="newEvent" />
         <button @click= "insertTodo">追加</button>
@@ -77,6 +76,8 @@ export default {
   width:60%;
   background-color:white;
   padding:10%;
+   display: flex;
+  justify-content: center;
 }
 .menu{
   width:20%;
