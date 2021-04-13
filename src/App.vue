@@ -1,12 +1,11 @@
 <template>
 <div id="app" >
       
-       <div  class="center"> 
+        
        <h1>Todo List</h1>   
-      <div class="todo">
         <input type="text"  v-model="newEvent" />
         <button @click= "insertTodo">追加</button>
-      </div>
+        <div  class="center">
       <div class="item" v-for="item in todoLists" :key="item.id">
        <input type="text" v-model="item.event" />
        <div class="menu">
